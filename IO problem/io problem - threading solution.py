@@ -26,7 +26,7 @@ if __name__ == "__main__":
     sites = [
         "https://www.jython.org",
         "http://olympus.realpython.org/dice",
-    ] * 500
+    ] * 50
     sites = {idx: s for idx, s in enumerate(sites)}
     start_time = time.time()
     download_all_sites(sites)

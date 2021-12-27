@@ -23,9 +23,9 @@ if __name__ == "__main__":
     sites = [
         "https://www.jython.org",
         "http://olympus.realpython.org/dice",
-    ] * 500
+    ] * 50
     sites = {idx: s for idx, s in enumerate(sites)}
     start_time = time.time()
-    asyncio.get_event_loop().run_until_complete(download_all_sites(sites)) # Wrap a normal function call in this syntax
+    asyncio.run(download_all_sites(sites)) # Wrap a normal function call in this syntax
     duration = time.time() - start_time
     print(f"Downloaded {len(sites)} in {duration} seconds")
