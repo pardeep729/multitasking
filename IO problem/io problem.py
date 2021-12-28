@@ -1,3 +1,6 @@
+# Lots of I/O related calls. Lots of calls to websites. Therefore lots of waiting for responses, so wasted idle time.
+# Threading means having multiple trains of thought for the same brain.
+
 import requests
 import time
 
